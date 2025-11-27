@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }        
+        header{
+            background-color: darkgreen;
+            display: flex;
+        }
+        header h1{
+            width: 30%;
+            padding: 20px;
+            color: aliceblue;
+
+        }
+        header nav{
+            width: 60%;
+            text-align: right;
+            margin-top:20px ;
+            padding: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            color: aliceblue;
+            padding: 20px; 
+        }
+        header img{
+            /*margin: 10px 0px 10px 20px;top right botton left*/
+            margin: 10px 20px;/* top, button/ left,right */
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        footer{
+            background-color: darkgreen;
+            text-align: center;
+            font-size: small;
+            padding: 20px;
+            color: aliceblue;
+        }
+        section{
+            display: flex;
+        }
+        aside ul{
+            list-style-type: none;
+        }
+        article, aside, .card{
+            background-color: aliceblue;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 10px;
+            box-shadow: 3px 5px 5px 3px gray; /*right down blur spread color */
+        }
+        article{
+            width: 70%;
+        }
+        aside{
+            width: 25%;
+        }
+        h2, figcaption{
+            text-align: center;
+        }
+        a:hover{
+            color: pink;
+        }
+        article:hover, aside:hover, .card:hover{
+            box-shadow: 3px 5px 5px 3px rgb(31, 29, 29);
+            transform: scale(1.02);
+        }
+        .card{
+            width: 23%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/flower5.jpg" alt="flowers">
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Title</h2><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi veritatis sunt sapiente nostrum rerum eius optio inventore nemo, eaque, accusamus reiciendis ad! Maiores dolorem possimus eveniet necessitatibus cum nulla ullam!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi veritatis sunt sapiente nostrum rerum eius optio inventore nemo, eaque, accusamus reiciendis ad! Maiores dolorem possimus eveniet necessitatibus cum nulla ullam!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi veritatis sunt sapiente nostrum rerum eius optio inventore nemo, eaque, accusamus reiciendis ad! Maiores dolorem possimus eveniet necessitatibus cum nulla ullam!</p><br>
+            </article>
+            <aside>
+                <h2>Announcements</h2><br>
+                <ul>
+                    <li>Events</li>
+                    <li>Festival</li>
+                    <li>Games</li>
+                </ul>
+            </aside>
+        </section>
+        <section>
+            <figure class="card">
+                <img src="images/flower5.jpg" alt="flowers" width="100%">
+                <figcaption>Flowers</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/flower5.jpg" alt="flowers" width="100%">
+                <figcaption>Flowers</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/flower5.jpg" alt="flowers" width="100%">
+                <figcaption>Flowers</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/flower5.jpg" alt="flowers" width="100%">
+                <figcaption>Flowers</figcaption>
+            </figure>
+        </section>
+        <details>
+            <summary>Click to learn more</summary>
+            <p>This content is hidden until clicked.</p>
+        </details>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2025 | All Right Reserved</p>
+    </footer>
+</body>
+</html>
